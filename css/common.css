@@ -62,3 +62,17 @@ ul{
   border: 1px solid #808080;
   margin: 8px;
 }
+#body-task-2 {
+  max-width: 1280px;
+}
+.gallery li{
+  width: 1128px;
+  height: 300px;
+  display: inline;
+  top: 76px;
+  margin:24px 12px 24px 12px;
+}
+.gallery li img{
+  width: 360px;
+  height: 300px;
+}
