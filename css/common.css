@@ -4,15 +4,15 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
 }
-ul{
+ul {
   list-style: none;
 }
 #body-task-1 {
@@ -24,9 +24,9 @@ ul{
   gap: 24px;
   border-radius: 8px;
   opacity: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
-#categories li .item h2{
+#categories li .item h2 {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
@@ -35,25 +35,25 @@ ul{
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #2E2F42;
+  color: #2e2f42;
   padding: 16px;
 }
-#categories li{
+#categories li {
   width: auto;
   height: auto;
   padding: 16px;
   gap: 16px;
   border-radius: 8px;
   opacity: 0px;
-  background: #F6F6FE;
+  background: #f6f6fe;
 }
-#categories .item{
+#categories .item {
   margin-bottom: 24px;
 }
-#categories .item ul{
+#categories .item ul {
   padding-inline-start: 0;
 }
-.item ul li{
+.item ul li {
   width: 360px;
   height: 40px;
   gap: 0px;
@@ -65,24 +65,24 @@ ul{
 #body-task-2 {
   max-width: 1280px;
 }
-.gallery li{
+.gallery li {
   width: 1128px;
   height: 300px;
   display: inline;
   top: 76px;
-  margin:24px 12px 24px 12px;
+  margin: 24px 12px 24px 12px;
 }
-.gallery li img{
+.gallery li img {
   width: 360px;
   height: 300px;
 }
 #name-input {
   width: 360px;
-height: 40px;
-gap: 0px;
-border-radius: 4px;
-opacity: 0px;
-border: 1px solid #808080
+  height: 40px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  border: 1px solid #808080;
 }
 .body-task-3 h1 {
   font-family: Montserrat;
@@ -93,5 +93,73 @@ border: 1px solid #808080
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #2E2F42;
+  color: #2e2f42;
+}
+.login-form {
+  width: 408px;
+  height: 256px;
+  top: -679px;
+  left: 1208px;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #ffffff;
+}
+.lblEmail {
+  display: inline-block;
+  width: 360px;
+  height: 72px;
+  gap: 8px;
+  opacity: 0px;
+  
+}
+.login-form .lblEmail {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+.lblEmail input {
+  width: 360px;
+  height: 40px;
+  gap: 0px;
+  opacity: 0px;
+}
+.lblPassw {
+  display: inline-block;
+  width: 360px;
+  height: 72px;
+  gap: 8px;
+  opacity: 0px;
+}
+.lblPassw input {
+  width: 360px;
+height: 40px;
+gap: 0px;
+opacity: 0px;
+}
+.login-form button {
+  width: 86px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  border-width: 0;
+  opacity: 0px;
+  background: #4E75FF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
 }
