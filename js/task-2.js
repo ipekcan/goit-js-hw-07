@@ -24,8 +24,10 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
-// const addLi = elem => `<li> ${elem} </li>`;
+
 const gallerySect = document.body.firstElementChild.nextElementSibling;
+const imgArrHtml = [];
+let imgStr = "";
 
 for (const image of images) {
   let newLi = document.createElement("li");
@@ -35,5 +37,8 @@ for (const image of images) {
   newImg.alt = image.alt;
 
   newLi.append(newImg);
-  gallerySect.append(newLi);
+  imgArrHtml.push(newLi.outerHTML);
 }
+
+imgStr = imgArrHtml.join("");
+gallerySect.innerHTML = imgStr;
