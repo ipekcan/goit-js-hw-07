@@ -4,17 +4,18 @@ const btnCreate = document.querySelector("#controls .create");
 const btnDestroy = document.querySelector("#controls .destroy");
 
 const divBoxes = document.querySelector("#boxes");
+let divNum = document.getElementsByClassName("inputNumber");
 
 btnCreate.addEventListener("click", createBoxes);
 btnDestroy.addEventListener("click", destroy);
 
-const boxArrHtml = [];
+let boxArrHtml = [];
 let boxStr = "";
 
 function createBoxes(amount) {
   divBoxes.innerHTML = "";
   boxArrHtml.length = 0;
-  const divNum = document.getElementsByClassName("inputNumber");
+  
   amount = divNum[0].value;
   if (amount >= 1 && amount <= 100) {
     for (let i = 0; i < amount; i++) {
@@ -30,6 +31,10 @@ function createBoxes(amount) {
     }
     boxStr = boxArrHtml.join("");
     divBoxes.innerHTML = boxStr;
+    divNum[0].value = "";
+  }else {
+    alert("Hatali sayi girdiniz!")
+    destroy();
   }
 }
 
@@ -41,6 +46,6 @@ function getRandomHexColor() {
 function destroy() {
   divBoxes.innerHTML = "";
   boxArrHtml = [];
-  let divNum = document.getElementsByClassName("inputNumber");
+  
   divNum[0].value = "";
 }
