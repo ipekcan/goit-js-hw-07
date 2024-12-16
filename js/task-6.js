@@ -13,27 +13,27 @@ let boxArrHtml = [];
 let boxStr = "";
 
 function createBoxes(amount) {
-  divBoxes.innerHTML = "";
   boxArrHtml.length = 0;
-  
+
   amount = divNum[0].value;
   if (amount >= 1 && amount <= 100) {
+    const fragment = document.createDocumentFragment(); // DocumentFragment oluştur
+
     for (let i = 0; i < amount; i++) {
       let newDiv = document.createElement("div");
+      newDiv.style.width = `${30 + 10 * i}px`;
+      newDiv.style.height = `${30 + 10 * i}px`;
+      newDiv.style.backgroundColor = getRandomHexColor();
+      newDiv.style.margin = "44px";
 
-      newDiv.setAttribute(
-        "style",
-        `width:${30 + 10 * i}px; height:${
-          30 + 10 * i
-        }px; background-color:${getRandomHexColor()}; margin: 44px`
-      );
-      boxArrHtml.push(newDiv.outerHTML);
+      fragment.appendChild(newDiv); // Div'i fragment'e ekle
     }
-    boxStr = boxArrHtml.join("");
-    divBoxes.innerHTML = boxStr;
+
+    divBoxes.innerHTML = ""; // Önce içeriği temizle
+    divBoxes.appendChild(fragment); // Tek seferde DOM'a ekle
     divNum[0].value = "";
-  }else {
-    alert("Hatali sayi girdiniz!")
+  } else {
+    alert("Hatali sayi girdiniz!");
     destroy();
   }
 }
@@ -46,6 +46,6 @@ function getRandomHexColor() {
 function destroy() {
   divBoxes.innerHTML = "";
   boxArrHtml = [];
-  
+
   divNum[0].value = "";
 }
